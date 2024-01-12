@@ -1,1 +1,74 @@
-test
+Test Scenario ID: TS_Login_001
+Test Scenario: Verify that the image resizing tool accurately resizes an image while maintaining its aspect ratio.
+
+Test Case ID
+Test Case
+Pre-Condition
+Test Steps
+Test Data
+Expected Result
+Post Condition
+Actual Result
+Status
+TS_Login_001
+Halaman Login
+1. Sistem apotek sudah diakses. 
+2. Pengguna belum masuk sistem.
+1. Akses halaman login sistem apotek. 
+2. Isi bidang "Username" dan "Password".
+3. Klik tombol "Login".
+Username: user123 Password: password123
+Pengguna diarahkan ke halaman utama sistem apotek.
+1. Pengguna berhasil masuk ke sistem. 
+2. Halaman utama sistem apotek.
+[pass]
+
+
+TS_Login_002
+Validasi Formulir Login
+1. Sistem apotek sudah diakses. 
+2. Pengguna belum masuk sistem.
+1. Akses halaman login sistem apotek. 2. Biarkan bidang "Username" dan/atau "Password" kosong. 
+3. Klik tombol "Login".
+(Kosong)
+Sistem menampilkan pesan kesalahan yang meminta untuk mengisi semua bidang.
+1. Pengguna tetap berada di halaman login.
+2. Pesan kesalahan ditampilkan.
+
+
+
+
+TS_Login_003
+Pesan Kesalahan Login
+1. Sistem apotek sudah diakses. 
+2. Pengguna belum masuk sistem.
+1. Akses halaman login sistem apotek. 2. Isi bidang "Username" dengan username yang valid. 
+3. Isi bidang "Password" dengan password yang tidak valid. 4. Klik tombol "Login".
+Username: user123 Password: wrongpassword
+Sistem menampilkan pesan kesalahan bahwa kombinasi username dan password tidak valid.
+1. Pengguna tetap berada di halaman login. 
+2. Pesan kesalahan ditampilkan.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
